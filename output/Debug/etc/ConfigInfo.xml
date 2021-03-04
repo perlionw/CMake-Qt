@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Config>
+	<WebInfo>
+		<WebInfo 
+				robotdata_addr = "http://127.0.0.1:11456/robotdata?wsdl"
+				taskdata_addr = "http://127.0.0.1:11456/taskdata?wsdl" 
+				taskfinish_addr = "http://127.0.0.1:11456/taskfinish?wsdl"
+		/>
+	</WebInfo>
+	<DataBaseInfo>
+		<DataBaseInfo 
+			    db_user = "root"
+				db_host = "127.0.0.1"
+				db_name = "patrolcar"
+				db_port = "3306"
+				db_pass = "123456"
+		/>		
+	</DataBaseInfo>
+	
+</Config>

@@ -1,0 +1,37 @@
+﻿Build started 2020/3/11 9:17:27.
+     1>Project "C:\WorkSpace\StationCheckTool\build\ZERO_CHECK.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Checking Build System
+         CMake is re-running because C:/WorkSpace/StationCheckTool/build/CMakeFiles/generate.stamp is out-of-date.
+           the file 'C:/WorkSpace/StationCheckTool/CMakeLists.txt'
+           is newer than 'C:/WorkSpace/StationCheckTool/build/CMakeFiles/generate.stamp.depend'
+           result='-1'
+         C:/WorkSpace/StationCheckTool/src/TaskFinishClient
+         C:/WorkSpace/StationCheckTool/build
+         C:/WorkSpace/StationCheckTool/src/TaskFinishClient../../lib
+         -- Configuring done
+         CMake Warning (dev) in CMakeLists.txt:
+           Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+           Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+           command to set the policy and suppress this warning.
+         
+           For compatibility, CMake is excluding the GENERATED source file(s):
+         
+             "C:/WorkSpace/StationCheckTool/build/ui_stationrobottool.h"
+             "C:/WorkSpace/StationCheckTool/build/qrc_stationrobottool.cpp"
+         
+           from processing by AUTOMOC.  If any of the files should be processed, set
+           CMP0071 to NEW.  If any of the files should not be processed, explicitly
+           exclude them by setting the source file property SKIP_AUTOMOC:
+         
+             set_property(SOURCE file.h PROPERTY SKIP_AUTOMOC ON)
+         
+         This warning is for project developers.  Use -Wno-dev to suppress it.
+         
+         -- Generating done
+         -- Build files have been written to: C:/WorkSpace/StationCheckTool/build
+     1>Done Building Project "C:\WorkSpace\StationCheckTool\build\ZERO_CHECK.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.99

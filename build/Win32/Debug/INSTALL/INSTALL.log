@@ -1,0 +1,37 @@
+﻿Build started 2020/3/10 16:51:54.
+     1>Project "C:\WorkSpace\StationCheckTool\build\INSTALL.vcxproj" on node 2 (Build target(s)).
+     1>PostBuildEvent:
+         setlocal
+         C:\ZSoftWare\cmake-3.16.1-win64-x64\bin\cmake.exe -DBUILD_TYPE=Debug -P cmake_install.cmake
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+         -- Install configuration: "Debug"
+         -- Up-to-date: C:/WorkSpace/StationCheckTool/output/Debug/StationCheckTool.exe
+         CMake Error at src/TaskFinishClient/cmake_install.cmake:37 (file):
+           file cannot create directory: C:/Program Files (x86)/StationCheckTool/lib.
+           Maybe need administrative privileges.
+         Call Stack (most recent call first):
+           cmake_install.cmake:82 (include)
+         
+         
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(132,5): error MSB3073: The command "setlocal
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(132,5): error MSB3073: C:\ZSoftWare\cmake-3.16.1-win64-x64\bin\cmake.exe -DBUILD_TYPE=Debug -P cmake_install.cmake
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(132,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(132,5): error MSB3073: :cmEnd
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(132,5): error MSB3073: endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(132,5): error MSB3073: :cmErrorLevel
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(132,5): error MSB3073: exit /b %1
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(132,5): error MSB3073: :cmDone
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(132,5): error MSB3073: if %errorlevel% neq 0 goto :VCEnd
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(132,5): error MSB3073: :VCEnd" exited with code 1.
+     1>Done Building Project "C:\WorkSpace\StationCheckTool\build\INSTALL.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.20

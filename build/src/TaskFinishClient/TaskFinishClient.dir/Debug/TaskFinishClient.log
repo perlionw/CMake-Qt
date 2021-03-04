@@ -1,0 +1,20 @@
+﻿Build started 2020/3/11 9:22:22.
+     1>Project "C:\WorkSpace\StationCheckTool\build\src\TaskFinishClient\TaskFinishClient.vcxproj" on node 4 (Build target(s)).
+     1>ClCompile:
+         C:\ZWSWorkSpace\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\WorkSpace\StationCheckTool\src\TaskFinishClient\..\..\include\BasicDefine /IC:\WorkSpace\StationCheckTool\src\TaskFinishClient\..\..\include\webclient /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D TaskFinishClient_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"TaskFinishClient.dir\Debug\\" /Fd"TaskFinishClient.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt C:\WorkSpace\StationCheckTool\src\TaskFinishClient\taskfinish_imply.cpp
+         taskfinish_imply.cpp
+     1>C:\WorkSpace\StationCheckTool\src\TaskFinishClient\taskfinish_imply.cpp(39): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\TaskFinishClient\taskfinish_imply.cpp(82): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\ZWSWorkSpace\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\WorkSpace\StationCheckTool\temp\TaskFinishClient\Debug\TaskFinishClient.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/WorkSpace/StationCheckTool/temp/TaskFinishClient/Debug/TaskFinishClient.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/WorkSpace/StationCheckTool/temp/TaskFinishClient/Debug/TaskFinishClient.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /DLL TaskFinishClient.dir\Debug\TaskFinishC.obj
+         TaskFinishClient.dir\Debug\TaskFinishClient.obj
+         TaskFinishClient.dir\Debug\envC.obj
+         TaskFinishClient.dir\Debug\stdsoap2.obj
+         TaskFinishClient.dir\Debug\str_codec.obj
+         TaskFinishClient.dir\Debug\taskfinish_imply.obj
+         TaskFinishClient.vcxproj -> C:\WorkSpace\StationCheckTool\temp\TaskFinishClient\Debug\TaskFinishClient.dll
+     1>Done Building Project "C:\WorkSpace\StationCheckTool\build\src\TaskFinishClient\TaskFinishClient.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.69

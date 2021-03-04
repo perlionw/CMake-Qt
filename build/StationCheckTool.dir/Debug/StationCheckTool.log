@@ -1,0 +1,66 @@
+﻿Build started 2020/3/11 9:22:24.
+     1>Project "C:\WorkSpace\StationCheckTool\build\StationCheckTool.vcxproj" on node 3 (Build target(s)).
+     1>PreBuildEvent:
+         setlocal
+         cd C:\WorkSpace\StationCheckTool\build
+         if %errorlevel% neq 0 goto :cmEnd
+         C:
+         if %errorlevel% neq 0 goto :cmEnd
+         C:\ZSoftWare\cmake-3.16.1-win64-x64\bin\cmake.exe -E cmake_autogen C:/WorkSpace/StationCheckTool/build/CMakeFiles/StationCheckTool_autogen.dir/AutogenInfo.json Debug
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+       ClCompile:
+         C:\ZWSWorkSpace\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\include_Debug /IC:\WorkSpace\StationCheckTool\build /IC:\WorkSpace\StationCheckTool\src\StationCheckTool /IC:\WorkSpace\StationCheckTool\include\webclient /IC:\WorkSpace\StationCheckTool\include\BasicDefine /IC:\WorkSpace\StationCheckTool\include\rapidxml /IC:\Qt\Qt5.5.1\5.5\msvc2013\include /IC:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets /IC:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui /IC:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore /I"C:\Qt\Qt5.5.1\5.5\msvc2013\.\mkspecs\win32-msvc2013" /IC:\Qt\Qt5.5.1\5.5\msvc2013\include\QtSql /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D QT_SQL_LIB /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"StationCheckTool.dir\Debug\\" /Fd"StationCheckTool.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt C:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\mocs_compilation.cpp C:\WorkSpace\StationCheckTool\src\StationCheckTool\DataView.cpp C:\WorkSpace\StationCheckTool\src\StationCheckTool\PatrolDataView.cpp C:\WorkSpace\StationCheckTool\src\StationCheckTool\RobotControlView.cpp C:\WorkSpace\StationCheckTool\src\StationCheckTool\RobotSelfDataView.cpp C:\WorkSpace\StationCheckTool\src\StationCheckTool\StationDeviceControlView.cpp C:\WorkSpace\StationCheckTool\src\StationCheckTool\TaskControlView.cpp C:\WorkSpace\StationCheckTool\src\StationCheckTool\TaskDataView.cpp C:\WorkSpace\StationCheckTool\src\StationCheckTool\main.cpp C:\WorkSpace\StationCheckTool\src\StationCheckTool\stationrobottool.cpp
+         mocs_compilation.cpp
+         DataView.cpp
+         PatrolDataView.cpp
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\PatrolDataView.cpp(30): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\PatrolDataView.cpp(85): warning C4018: '<' : signed/unsigned mismatch
+         RobotControlView.cpp
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\RobotControlView.cpp(337): warning C4018: '<' : signed/unsigned mismatch
+         RobotSelfDataView.cpp
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\RobotSelfDataView.cpp(243): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\RobotSelfDataView.cpp(268): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\RobotSelfDataView.cpp(290): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\RobotSelfDataView.cpp(320): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\RobotSelfDataView.cpp(342): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\RobotSelfDataView.cpp(384): warning C4018: '<' : signed/unsigned mismatch
+         StationDeviceControlView.cpp
+         TaskControlView.cpp
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\TaskControlView.cpp(139): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\TaskControlView.cpp(554): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\TaskControlView.cpp(633): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\TaskControlView.cpp(742): warning C4018: '<' : signed/unsigned mismatch
+         TaskDataView.cpp
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\TaskDataView.cpp(165): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\TaskDataView.cpp(198): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\TaskDataView.cpp(246): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\TaskDataView.cpp(279): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\StationCheckTool\TaskDataView.cpp(310): warning C4018: '<' : signed/unsigned mismatch
+         main.cpp
+         stationrobottool.cpp
+         Generating Code...
+       Link:
+         C:\ZWSWorkSpace\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\WorkSpace\StationCheckTool\build\Debug\StationCheckTool.exe" /INCREMENTAL /NOLOGO ..\temp\TaskDataClient\Debug\TaskDataClient.lib ..\temp\TaskFinishClient\Debug\TaskFinishClient.lib ..\temp\RobotDataClient\Debug\RobotDataClient.lib C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Widgetsd.lib C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Guid.lib C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Sqld.lib C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/WorkSpace/StationCheckTool/build/Debug/StationCheckTool.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/WorkSpace/StationCheckTool/build/Debug/StationCheckTool.lib" /MACHINE:X86 /SAFESEH  /machine:X86 StationCheckTool.dir\Debug\mocs_compilation.obj
+         StationCheckTool.dir\Debug\DataView.obj
+         StationCheckTool.dir\Debug\PatrolDataView.obj
+         StationCheckTool.dir\Debug\RobotControlView.obj
+         StationCheckTool.dir\Debug\RobotSelfDataView.obj
+         StationCheckTool.dir\Debug\StationDeviceControlView.obj
+         StationCheckTool.dir\Debug\TaskControlView.obj
+         StationCheckTool.dir\Debug\TaskDataView.obj
+         StationCheckTool.dir\Debug\main.obj
+         StationCheckTool.dir\Debug\stationrobottool.obj
+         StationCheckTool.dir\Debug\qrc_stationrobottool.obj
+         StationCheckTool.vcxproj -> C:\WorkSpace\StationCheckTool\build\Debug\StationCheckTool.exe
+     1>Done Building Project "C:\WorkSpace\StationCheckTool\build\StationCheckTool.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.51

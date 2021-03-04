@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\mocs_compilation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\DataView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\PatrolDataView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\RobotControlView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\RobotSelfDataView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\StationDeviceControlView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\TaskControlView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\TaskDataView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\stationrobottool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\build\qrc_stationrobottool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\WorkSpace\StationCheckTool\build\ui_stationrobottool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\stationrobottool.ui" />
+    <CustomBuild Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\stationrobottool.qrc" />
+    <CustomBuild Include="C:\WorkSpace\StationCheckTool\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{DDF3FAA4-D025-394D-A096-8B6BB7D20D9F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A10DB08E-DB05-3C49-AAE4-139F8A6B20C9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

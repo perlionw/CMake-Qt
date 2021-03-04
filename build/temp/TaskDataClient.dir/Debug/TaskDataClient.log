@@ -1,0 +1,24 @@
+﻿Build started 2020/3/11 9:22:22.
+     1>Project "C:\WorkSpace\StationCheckTool\build\temp\TaskDataClient.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\ZWSWorkSpace\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\WorkSpace\StationCheckTool\src\TaskDataClient\..\..\include\BasicDefine /IC:\WorkSpace\StationCheckTool\src\TaskDataClient\..\..\include\webclient /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D TaskDataClient_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"TaskDataClient.dir\Debug\\" /Fd"TaskDataClient.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt C:\WorkSpace\StationCheckTool\src\TaskDataClient\taskdata_imply.cpp
+         taskdata_imply.cpp
+     1>C:\WorkSpace\StationCheckTool\src\TaskDataClient\taskdata_imply.cpp(31): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\TaskDataClient\taskdata_imply.cpp(69): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\TaskDataClient\taskdata_imply.cpp(102): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\TaskDataClient\taskdata_imply.cpp(141): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\TaskDataClient\taskdata_imply.cpp(173): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\TaskDataClient\taskdata_imply.cpp(208): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\ZWSWorkSpace\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\WorkSpace\StationCheckTool\temp\TaskDataClient\Debug\TaskDataClient.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/WorkSpace/StationCheckTool/temp/TaskDataClient/Debug/TaskDataClient.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/WorkSpace/StationCheckTool/temp/TaskDataClient/Debug/TaskDataClient.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /DLL TaskDataClient.dir\Debug\TaskDataC.obj
+         TaskDataClient.dir\Debug\TaskDataClient.obj
+         TaskDataClient.dir\Debug\envC.obj
+         TaskDataClient.dir\Debug\stdsoap2.obj
+         TaskDataClient.dir\Debug\str_codec.obj
+         TaskDataClient.dir\Debug\taskdata_imply.obj
+         TaskDataClient.vcxproj -> C:\WorkSpace\StationCheckTool\temp\TaskDataClient\Debug\TaskDataClient.dll
+     1>Done Building Project "C:\WorkSpace\StationCheckTool\build\temp\TaskDataClient.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.68

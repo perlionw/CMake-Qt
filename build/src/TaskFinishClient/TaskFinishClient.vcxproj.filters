@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\TaskFinishClient\TaskFinishC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\TaskFinishClient\TaskFinishClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\TaskFinishClient\envC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\TaskFinishClient\stdsoap2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\TaskFinishClient\str_codec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\TaskFinishClient\taskfinish_imply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\WorkSpace\StationCheckTool\src\TaskFinishClient\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A10DB08E-DB05-3C49-AAE4-139F8A6B20C9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

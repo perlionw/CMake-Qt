@@ -1,0 +1,28 @@
+﻿Build started 2020/3/11 9:22:22.
+     1>Project "C:\WorkSpace\StationCheckTool\build\src\RobotDataClient\RobotDataClient.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\ZWSWorkSpace\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\WorkSpace\StationCheckTool\src\RobotDataClient\..\..\include\BasicDefine /IC:\WorkSpace\StationCheckTool\src\RobotDataClient\..\..\include\webclient /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D RobotDataClient_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"RobotDataClient.dir\Debug\\" /Fd"RobotDataClient.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt C:\WorkSpace\StationCheckTool\src\RobotDataClient\robotdata_imply.cpp
+         robotdata_imply.cpp
+     1>C:\WorkSpace\StationCheckTool\src\RobotDataClient\robotdata_imply.cpp(34): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\RobotDataClient\robotdata_imply.cpp(68): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\RobotDataClient\robotdata_imply.cpp(481): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\RobotDataClient\robotdata_imply.cpp(515): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\RobotDataClient\robotdata_imply.cpp(548): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\RobotDataClient\robotdata_imply.cpp(585): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\RobotDataClient\robotdata_imply.cpp(624): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\RobotDataClient\robotdata_imply.cpp(659): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\RobotDataClient\robotdata_imply.cpp(693): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\WorkSpace\StationCheckTool\src\RobotDataClient\robotdata_imply.cpp(736): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\ZWSWorkSpace\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\WorkSpace\StationCheckTool\temp\RobotDataClient\Debug\RobotDataClient.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/WorkSpace/StationCheckTool/temp/RobotDataClient/Debug/RobotDataClient.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/WorkSpace/StationCheckTool/temp/RobotDataClient/Debug/RobotDataClient.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /DLL RobotDataClient.dir\Debug\RobotDataC.obj
+         RobotDataClient.dir\Debug\RobotDataClient.obj
+         RobotDataClient.dir\Debug\envC.obj
+         RobotDataClient.dir\Debug\robotdata_imply.obj
+         RobotDataClient.dir\Debug\stdsoap2.obj
+         RobotDataClient.dir\Debug\str_codec.obj
+         RobotDataClient.vcxproj -> C:\WorkSpace\StationCheckTool\temp\RobotDataClient\Debug\RobotDataClient.dll
+     1>Done Building Project "C:\WorkSpace\StationCheckTool\build\src\RobotDataClient\RobotDataClient.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.69

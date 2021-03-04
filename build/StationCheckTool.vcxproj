@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9958D431-6500-3858-BB4E-E1ADD1E4AF3C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>StationCheckTool</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\WorkSpace\StationCheckTool\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StationCheckTool.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StationCheckTool</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\WorkSpace\StationCheckTool\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StationCheckTool.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StationCheckTool</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\WorkSpace\StationCheckTool\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">StationCheckTool.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">StationCheckTool</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\WorkSpace\StationCheckTool\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">StationCheckTool.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">StationCheckTool</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\include_Debug;C:\WorkSpace\StationCheckTool\build;C:\WorkSpace\StationCheckTool\src\StationCheckTool;C:\WorkSpace\StationCheckTool\include\webclient;C:\WorkSpace\StationCheckTool\include\BasicDefine;C:\WorkSpace\StationCheckTool\include\rapidxml;C:\Qt\Qt5.5.1\5.5\msvc2013\include;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SQL_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SQL_LIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\include_Debug;C:\WorkSpace\StationCheckTool\build;C:\WorkSpace\StationCheckTool\src\StationCheckTool;C:\WorkSpace\StationCheckTool\include\webclient;C:\WorkSpace\StationCheckTool\include\BasicDefine;C:\WorkSpace\StationCheckTool\include\rapidxml;C:\Qt\Qt5.5.1\5.5\msvc2013\include;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\include_Debug;C:\WorkSpace\StationCheckTool\build;C:\WorkSpace\StationCheckTool\src\StationCheckTool;C:\WorkSpace\StationCheckTool\include\webclient;C:\WorkSpace\StationCheckTool\include\BasicDefine;C:\WorkSpace\StationCheckTool\include\rapidxml;C:\Qt\Qt5.5.1\5.5\msvc2013\include;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target StationCheckTool</Message>
+      <Command>setlocal
+cd C:\WorkSpace\StationCheckTool\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\ZSoftWare\cmake-3.16.1-win64-x64\bin\cmake.exe -E cmake_autogen C:/WorkSpace/StationCheckTool/build/CMakeFiles/StationCheckTool_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\temp\TaskDataClient\Debug\TaskDataClient.lib;..\temp\TaskFinishClient\Debug\TaskFinishClient.lib;..\temp\RobotDataClient\Debug\RobotDataClient.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Guid.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Sqld.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Cored.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/WorkSpace/StationCheckTool/build/Debug/StationCheckTool.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/WorkSpace/StationCheckTool/build/Debug/StationCheckTool.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\include_Release;C:\WorkSpace\StationCheckTool\build;C:\WorkSpace\StationCheckTool\src\StationCheckTool;C:\WorkSpace\StationCheckTool\include\webclient;C:\WorkSpace\StationCheckTool\include\BasicDefine;C:\WorkSpace\StationCheckTool\include\rapidxml;C:\Qt\Qt5.5.1\5.5\msvc2013\include;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SQL_LIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SQL_LIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\include_Release;C:\WorkSpace\StationCheckTool\build;C:\WorkSpace\StationCheckTool\src\StationCheckTool;C:\WorkSpace\StationCheckTool\include\webclient;C:\WorkSpace\StationCheckTool\include\BasicDefine;C:\WorkSpace\StationCheckTool\include\rapidxml;C:\Qt\Qt5.5.1\5.5\msvc2013\include;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\include_Release;C:\WorkSpace\StationCheckTool\build;C:\WorkSpace\StationCheckTool\src\StationCheckTool;C:\WorkSpace\StationCheckTool\include\webclient;C:\WorkSpace\StationCheckTool\include\BasicDefine;C:\WorkSpace\StationCheckTool\include\rapidxml;C:\Qt\Qt5.5.1\5.5\msvc2013\include;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target StationCheckTool</Message>
+      <Command>setlocal
+cd C:\WorkSpace\StationCheckTool\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\ZSoftWare\cmake-3.16.1-win64-x64\bin\cmake.exe -E cmake_autogen C:/WorkSpace/StationCheckTool/build/CMakeFiles/StationCheckTool_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\temp\TaskDataClient\Release\TaskDataClient.lib;..\temp\TaskFinishClient\Release\TaskFinishClient.lib;..\temp\RobotDataClient\Release\RobotDataClient.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Widgets.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Gui.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Sql.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/WorkSpace/StationCheckTool/build/Release/StationCheckTool.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/WorkSpace/StationCheckTool/build/Release/StationCheckTool.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\include_MinSizeRel;C:\WorkSpace\StationCheckTool\build;C:\WorkSpace\StationCheckTool\src\StationCheckTool;C:\WorkSpace\StationCheckTool\include\webclient;C:\WorkSpace\StationCheckTool\include\BasicDefine;C:\WorkSpace\StationCheckTool\include\rapidxml;C:\Qt\Qt5.5.1\5.5\msvc2013\include;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SQL_LIB;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SQL_LIB;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\include_MinSizeRel;C:\WorkSpace\StationCheckTool\build;C:\WorkSpace\StationCheckTool\src\StationCheckTool;C:\WorkSpace\StationCheckTool\include\webclient;C:\WorkSpace\StationCheckTool\include\BasicDefine;C:\WorkSpace\StationCheckTool\include\rapidxml;C:\Qt\Qt5.5.1\5.5\msvc2013\include;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\include_MinSizeRel;C:\WorkSpace\StationCheckTool\build;C:\WorkSpace\StationCheckTool\src\StationCheckTool;C:\WorkSpace\StationCheckTool\include\webclient;C:\WorkSpace\StationCheckTool\include\BasicDefine;C:\WorkSpace\StationCheckTool\include\rapidxml;C:\Qt\Qt5.5.1\5.5\msvc2013\include;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target StationCheckTool</Message>
+      <Command>setlocal
+cd C:\WorkSpace\StationCheckTool\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\ZSoftWare\cmake-3.16.1-win64-x64\bin\cmake.exe -E cmake_autogen C:/WorkSpace/StationCheckTool/build/CMakeFiles/StationCheckTool_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\temp\TaskDataClient\MinSizeRel\TaskDataClient.lib;..\temp\TaskFinishClient\MinSizeRel\TaskFinishClient.lib;..\temp\RobotDataClient\MinSizeRel\RobotDataClient.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Widgets.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Gui.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Sql.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/WorkSpace/StationCheckTool/build/MinSizeRel/StationCheckTool.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/WorkSpace/StationCheckTool/build/MinSizeRel/StationCheckTool.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\include_RelWithDebInfo;C:\WorkSpace\StationCheckTool\build;C:\WorkSpace\StationCheckTool\src\StationCheckTool;C:\WorkSpace\StationCheckTool\include\webclient;C:\WorkSpace\StationCheckTool\include\BasicDefine;C:\WorkSpace\StationCheckTool\include\rapidxml;C:\Qt\Qt5.5.1\5.5\msvc2013\include;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SQL_LIB;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_SQL_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\include_RelWithDebInfo;C:\WorkSpace\StationCheckTool\build;C:\WorkSpace\StationCheckTool\src\StationCheckTool;C:\WorkSpace\StationCheckTool\include\webclient;C:\WorkSpace\StationCheckTool\include\BasicDefine;C:\WorkSpace\StationCheckTool\include\rapidxml;C:\Qt\Qt5.5.1\5.5\msvc2013\include;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\include_RelWithDebInfo;C:\WorkSpace\StationCheckTool\build;C:\WorkSpace\StationCheckTool\src\StationCheckTool;C:\WorkSpace\StationCheckTool\include\webclient;C:\WorkSpace\StationCheckTool\include\BasicDefine;C:\WorkSpace\StationCheckTool\include\rapidxml;C:\Qt\Qt5.5.1\5.5\msvc2013\include;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore;C:\Qt\Qt5.5.1\5.5\msvc2013\.\mkspecs\win32-msvc2013;C:\Qt\Qt5.5.1\5.5\msvc2013\include\QtSql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target StationCheckTool</Message>
+      <Command>setlocal
+cd C:\WorkSpace\StationCheckTool\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+C:\ZSoftWare\cmake-3.16.1-win64-x64\bin\cmake.exe -E cmake_autogen C:/WorkSpace/StationCheckTool/build/CMakeFiles/StationCheckTool_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\temp\TaskDataClient\RelWithDebInfo\TaskDataClient.lib;..\temp\TaskFinishClient\RelWithDebInfo\TaskFinishClient.lib;..\temp\RobotDataClient\RelWithDebInfo\RobotDataClient.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Widgets.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Gui.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Sql.lib;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/WorkSpace/StationCheckTool/build/RelWithDebInfo/StationCheckTool.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/WorkSpace/StationCheckTool/build/RelWithDebInfo/StationCheckTool.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\stationrobottool.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ui_stationrobottool.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\uic.exe -o C:/WorkSpace/StationCheckTool/build/ui_stationrobottool.h C:/WorkSpace/StationCheckTool/src/StationCheckTool/stationrobottool.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\WorkSpace\StationCheckTool\build\ui_stationrobottool.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ui_stationrobottool.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\uic.exe -o C:/WorkSpace/StationCheckTool/build/ui_stationrobottool.h C:/WorkSpace/StationCheckTool/src/StationCheckTool/stationrobottool.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\WorkSpace\StationCheckTool\build\ui_stationrobottool.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ui_stationrobottool.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\uic.exe -o C:/WorkSpace/StationCheckTool/build/ui_stationrobottool.h C:/WorkSpace/StationCheckTool/src/StationCheckTool/stationrobottool.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\WorkSpace\StationCheckTool\build\ui_stationrobottool.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ui_stationrobottool.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\uic.exe -o C:/WorkSpace/StationCheckTool/build/ui_stationrobottool.h C:/WorkSpace/StationCheckTool/src/StationCheckTool/stationrobottool.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\WorkSpace\StationCheckTool\build\ui_stationrobottool.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\stationrobottool.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating qrc_stationrobottool.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\rcc.exe --name stationrobottool --output C:/WorkSpace/StationCheckTool/build/qrc_stationrobottool.cpp C:/WorkSpace/StationCheckTool/src/StationCheckTool/stationrobottool.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\WorkSpace\StationCheckTool\build\qrc_stationrobottool.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating qrc_stationrobottool.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\rcc.exe --name stationrobottool --output C:/WorkSpace/StationCheckTool/build/qrc_stationrobottool.cpp C:/WorkSpace/StationCheckTool/src/StationCheckTool/stationrobottool.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\WorkSpace\StationCheckTool\build\qrc_stationrobottool.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating qrc_stationrobottool.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\rcc.exe --name stationrobottool --output C:/WorkSpace/StationCheckTool/build/qrc_stationrobottool.cpp C:/WorkSpace/StationCheckTool/src/StationCheckTool/stationrobottool.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\WorkSpace\StationCheckTool\build\qrc_stationrobottool.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating qrc_stationrobottool.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Qt\Qt5.5.1\5.5\msvc2013\bin\rcc.exe --name stationrobottool --output C:/WorkSpace/StationCheckTool/build/qrc_stationrobottool.cpp C:/WorkSpace/StationCheckTool/src/StationCheckTool/stationrobottool.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\WorkSpace\StationCheckTool\build\qrc_stationrobottool.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\WorkSpace\StationCheckTool\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/WorkSpace/StationCheckTool/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\ZSoftWare\cmake-3.16.1-win64-x64\bin\cmake.exe -SC:/WorkSpace/StationCheckTool -BC:/WorkSpace/StationCheckTool/build --check-stamp-file C:/WorkSpace/StationCheckTool/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QMngPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5SqlConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5SqlConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QMYSQLDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QODBCDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QPSQLDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QSQLiteDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeCCompiler.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeCXXCompiler.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeRCCompiler.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeSystem.cmake;C:\WorkSpace\StationCheckTool\src\StationCheckTool\stationrobottool.qrc;C:\WorkSpace\StationCheckTool\tool_config.h.in;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\WorkSpace\StationCheckTool\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/WorkSpace/StationCheckTool/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\ZSoftWare\cmake-3.16.1-win64-x64\bin\cmake.exe -SC:/WorkSpace/StationCheckTool -BC:/WorkSpace/StationCheckTool/build --check-stamp-file C:/WorkSpace/StationCheckTool/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QMngPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5SqlConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5SqlConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QMYSQLDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QODBCDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QPSQLDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QSQLiteDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeCCompiler.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeCXXCompiler.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeRCCompiler.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeSystem.cmake;C:\WorkSpace\StationCheckTool\src\StationCheckTool\stationrobottool.qrc;C:\WorkSpace\StationCheckTool\tool_config.h.in;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\WorkSpace\StationCheckTool\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/WorkSpace/StationCheckTool/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\ZSoftWare\cmake-3.16.1-win64-x64\bin\cmake.exe -SC:/WorkSpace/StationCheckTool -BC:/WorkSpace/StationCheckTool/build --check-stamp-file C:/WorkSpace/StationCheckTool/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QMngPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5SqlConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5SqlConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QMYSQLDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QODBCDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QPSQLDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QSQLiteDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeCCompiler.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeCXXCompiler.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeRCCompiler.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeSystem.cmake;C:\WorkSpace\StationCheckTool\src\StationCheckTool\stationrobottool.qrc;C:\WorkSpace\StationCheckTool\tool_config.h.in;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\WorkSpace\StationCheckTool\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/WorkSpace/StationCheckTool/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\ZSoftWare\cmake-3.16.1-win64-x64\bin\cmake.exe -SC:/WorkSpace/StationCheckTool -BC:/WorkSpace/StationCheckTool/build --check-stamp-file C:/WorkSpace/StationCheckTool/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QDDSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QMngPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5SqlConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5SqlConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QMYSQLDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QODBCDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QPSQLDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Sql\Qt5Sql_QSQLiteDriverPlugin.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.5.1\5.5\msvc2013\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeCCompiler.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeCXXCompiler.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeRCCompiler.cmake;C:\WorkSpace\StationCheckTool\build\CMakeFiles\3.16.1\CMakeSystem.cmake;C:\WorkSpace\StationCheckTool\src\StationCheckTool\stationrobottool.qrc;C:\WorkSpace\StationCheckTool\tool_config.h.in;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\ZSoftWare\cmake-3.16.1-win64-x64\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\WorkSpace\StationCheckTool\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\build\StationCheckTool_autogen\mocs_compilation.cpp" />
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\DataView.cpp" />
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\PatrolDataView.cpp" />
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\RobotControlView.cpp" />
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\RobotSelfDataView.cpp" />
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\StationDeviceControlView.cpp" />
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\TaskControlView.cpp" />
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\TaskDataView.cpp" />
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\main.cpp" />
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\src\StationCheckTool\stationrobottool.cpp" />
+    <ClInclude Include="C:\WorkSpace\StationCheckTool\build\ui_stationrobottool.h" />
+    <ClCompile Include="C:\WorkSpace\StationCheckTool\build\qrc_stationrobottool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\WorkSpace\StationCheckTool\build\ZERO_CHECK.vcxproj">
+      <Project>{503227C8-0990-3AAC-9017-FF300B1EA33A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\WorkSpace\StationCheckTool\build\src\RobotDataClient\RobotDataClient.vcxproj">
+      <Project>{2BEB7B30-12F1-3E6E-A401-ED599EC25A42}</Project>
+      <Name>RobotDataClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\WorkSpace\StationCheckTool\build\temp\TaskDataClient.vcxproj">
+      <Project>{223576E3-1227-3B5A-8F22-C8B2678BF1C4}</Project>
+      <Name>TaskDataClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\WorkSpace\StationCheckTool\build\src\TaskFinishClient\TaskFinishClient.vcxproj">
+      <Project>{769E589F-A361-3215-845F-25D1F2B65D42}</Project>
+      <Name>TaskFinishClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
